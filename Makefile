@@ -1,8 +1,7 @@
 # Dummy Makefile — satisfies vendor/lineage soong kernel header generator
 # by copying prebuilt UAPI headers instead of running real kbuild.
 
-PWD := $(shell pwd)
-SRC := $(PWD)/../../../device/advan/X1-kernel/kernel-headers
+SRC := device/advan/X1-kernel/kernel-headers
 
 headers_install:
 	@mkdir -p $(INSTALL_HDR_PATH)/usr/include
